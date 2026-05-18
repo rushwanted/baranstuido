@@ -2356,6 +2356,30 @@ footer{
   /* MENU */
   .menu-link{font-size:clamp(32px,9vw,52px);letter-spacing:-2px}
   .menu-footer{flex-wrap:wrap;gap:20px}
+  /* İKONLAR — masaüstü ile aynı */
+  .af-icon{ width:44px !important; height:44px !important; min-width:44px; }
+  .af-icon-svg{ padding:0 !important; background:transparent !important; border:none !important; }
+  .af-icon-svg svg{ width:44px !important; height:44px !important; display:block; }
+  .sv-icon-3d{ width:44px !important; height:44px !important; display:block; margin-bottom:16px; }
+  .sv-emoji{ display:none !important; }
+
+  /* ANALYTİCS */
+  .about-analytics{ padding:16px; }
+  .about-analytics-header{ flex-wrap:wrap; gap:6px; }
+  .about-analytics-grid{ grid-template-columns:1fr 1fr; gap:8px; }
+  .aa-stat{ padding:10px 6px; }
+  .aa-num{ font-size:18px; }
+  .aa-label{ font-size:9px; }
+  .about-dash-bars{ height:56px; gap:3px; }
+  .adb-col span{ font-size:7px; }
+  .adb-launch{ font-size:8px; }
+
+  /* AF-ITEM kartlar */
+  .af-item{ padding:16px; gap:12px; }
+  .af-content .af-title{ font-size:14px; }
+  .af-content .af-desc{ font-size:12px; }
+  .about-features{ gap:10px; }
+
 
   /* ANALYTICS */
   .analytics-grid{grid-template-columns:1fr}
@@ -2382,6 +2406,145 @@ footer{
 
     
 
+
+
+/* ══ MOBİL İKON FİX ══ */
+@media(max-width:768px){
+  .af-item{
+    overflow:visible !important;
+    align-items:flex-start;
+  }
+  .af-icon{
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+    min-height:40px !important;
+    flex-shrink:0 !important;
+    overflow:visible !important;
+    background:rgba(var(--accent-rgb),.08) !important;
+    border:1px solid rgba(var(--accent-rgb),.15) !important;
+    border-radius:12px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  .af-icon-svg{
+    background:transparent !important;
+    border:none !important;
+    padding:0 !important;
+    width:40px !important;
+    height:40px !important;
+    min-width:40px !important;
+  }
+  .af-icon-svg svg{
+    width:36px !important;
+    height:36px !important;
+    display:block !important;
+    overflow:visible !important;
+  }
+  /* Servis ikonları */
+  .sv-icon-3d{
+    width:40px !important;
+    height:40px !important;
+    display:block !important;
+    margin-bottom:14px !important;
+    overflow:visible !important;
+  }
+  .sv-icon-3d svg{
+    width:40px !important;
+    height:40px !important;
+    overflow:visible !important;
+  }
+  .sv-card{
+    overflow:visible !important;
+  }
+}
+
+@media(max-width:768px){
+  .melis-mock{
+    width:96% !important;
+    height:auto !important;
+  }
+  .melis-full-card .proj-visual{
+    height:360px !important;
+  }
+  .pv-melis{
+    height:360px !important;
+  }
+  .melis-hero{
+    padding:12px !important;
+    gap:8px !important;
+  }
+  .melis-hero-name{
+    font-size:22px !important;
+    letter-spacing:-0.5px !important;
+  }
+  .melis-btn-p,.melis-btn-s,.melis-btn-cv{
+    font-size:9px !important;
+    padding:6px 12px !important;
+  }
+  .melis-mp-logo{
+    width:80px !important;
+    height:80px !important;
+    font-size:20px !important;
+  }
+  .melis-orbit{
+    width:100px !important;
+    height:100px !important;
+  }
+  .melis-nav{
+    padding:8px 12px !important;
+  }
+  .melis-nav-links span{
+    font-size:8px !important;
+  }
+  .mslide-inner{
+    padding:12px 14px 8px !important;
+  }
+  .mslide-contact-title{
+    font-size:20px !important;
+  }
+  .melis-toggle-bar{
+    padding:7px 12px !important;
+  }
+}
+
+@media(max-width:768px){
+  .price-calc{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:20px !important;
+  }
+  .pc-right{
+    position:sticky !important;
+    top:80px !important;
+    z-index:10 !important;
+  }
+  .pc-result{
+    position:sticky !important;
+    top:80px !important;
+    background:var(--bg2) !important;
+    box-shadow:0 8px 32px rgba(0,0,0,.3) !important;
+  }
+  .pc-price-3d{
+    display:flex !important;
+    align-items:baseline !important;
+  }
+  .pc-num{
+    font-size:40px !important;
+    letter-spacing:-1px !important;
+  }
+  .pc-breakdown{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:5px !important;
+    max-height:140px !important;
+    overflow-y:auto !important;
+  }
+  .pc-break-item{
+    font-size:12px !important;
+  }
+}
 
 </style>
 </head>
